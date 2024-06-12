@@ -4,7 +4,7 @@ import CurrencySelector from '../CurrencySelector';
 import styles from './Header.module.css';
 import Cart from '../Cart/Cart';
 //import RegistrationForm from '../RegistrationForm/RegistrationForm';
-const Header = ({ cartItems, toggleRegistrationForm }) => {
+const Header = ({ cartItems, removeFromCart, toggleRegistrationForm }) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
 
     const toggleCart = () => {
