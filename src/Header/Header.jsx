@@ -3,8 +3,8 @@ import { useState } from 'react';
 import CurrencySelector from '../CurrencySelector';
 import styles from './Header.module.css';
 import Cart from '../Cart/Cart';
-
-const Header = ({ cartItems, removeFromCart }) => {
+//import RegistrationForm from '../RegistrationForm/RegistrationForm';
+const Header = ({ cartItems, toggleRegistrationForm }) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
 
     const toggleCart = () => {
@@ -13,11 +13,12 @@ const Header = ({ cartItems, removeFromCart }) => {
 
     return (
         <header className={styles.header}>
-            <div className="top-bar">
-                <CurrencySelector />
-                <div className="auth-links">
-                    <a href="#">Увійти</a>
-                    <a href="#">Реєстрація</a>
+            <div className={styles.topBar}>
+                <div className={styles.currencySwitcher}>
+                    <CurrencySelector />
+                </div>
+                <div className={styles.authLinks}>
+                    <a href="#" onClick={toggleRegistrationForm}>Реєстрація</a>
                 </div>
             </div>
             <nav className={styles.nav}>

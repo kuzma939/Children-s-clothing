@@ -3,26 +3,47 @@
     padding: 10px 20px;
 }
 
-.top-bar {
+.topBar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
 }
 
-.nav {
+.currencySwitcher select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.authLinks a {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+.authLinks a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.nav ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    padding: 0;
+    margin: 10px 0;
+    justify-content: center;
 }
 
-.nav a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #000;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
