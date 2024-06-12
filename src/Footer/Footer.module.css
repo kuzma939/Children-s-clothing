@@ -1,0 +1,39 @@
+footer {
+    background-color: #1e90ff;
+    padding: 20px;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+footer .info a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #ff1493;
+}
