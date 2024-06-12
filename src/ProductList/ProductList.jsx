@@ -21,7 +21,7 @@ const ProductList = ({ addToCart }) => {
             image: 'https://via.placeholder.com/200x200/ff69b4/ffffff?text=Baby+Outfit+Set'
         },
         {
-            id: 3,
+            id: 4,
             name: 'Дитяче взуття',
             price: '250 грн',
             image: 'https://via.placeholder.com/200x200/ff69b4/ffffff?text=Baby+Outfit+Set'
