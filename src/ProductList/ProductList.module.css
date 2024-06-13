@@ -1,15 +1,16 @@
+
 .products {
     padding: 20px;
     text-align: center;
 }
 
-.product-list {
+.productList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.product-list .product-item {
+.productList .productItem {
     width: 200px;
     margin: 10px;
     background-color: #fff;
@@ -19,11 +20,15 @@
     padding: 10px;
 }
 
-.product-list .product-item img {
+.productList .productItem img {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
+}
+.buttonList {
+    background-color: blue;
+    color: white;
 }

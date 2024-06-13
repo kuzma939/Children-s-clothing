@@ -1,4 +1,4 @@
-import './ProductList.module.css';
+import styles from './ProductList.module.css';
 
 const ProductList = ({ addToCart }) => {
     const products = [
@@ -10,13 +10,13 @@ const ProductList = ({ addToCart }) => {
         },
         {
             id: 2,
-            name: 'Футболка для хлопчиків',
+            name: 'Футболка',
             price: '300 грн',
             image: 'https://via.placeholder.com/200x200/1e90ff/ffffff?text=T-Shirt+for+Boys'
         },
         {
             id: 3,
-            name: 'Комплект для малюків',
+            name: 'Комплект',
             price: '700 грн',
             image: 'https://via.placeholder.com/200x200/ff69b4/ffffff?text=Baby+Outfit+Set'
         },
@@ -30,15 +30,15 @@ const ProductList = ({ addToCart }) => {
     ];
 
     return (
-        <section className="products">
+        <section className={styles.products}>
         <h2>Новинки</h2>
-        <div className="product-list">
+        <div className={styles.productList}>
             {products.map(product => (
-                <div key={product.id} className="product-item">
+                <div key={product.id} className={styles.productItem}>
                     <img src={product.image} alt={product.name} />
                     <h3>{product.name}</h3>
                     <p>Ціна: {product.price}</p>
-                    <button onClick={() => addToCart(product)}>Додати до корзини</button>
+                    <button className={styles.buttonList} onClick={() => addToCart(product)}>Додати до корзини</button>
                 </div>
             ))}
         </div>

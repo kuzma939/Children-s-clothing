@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import styles from './RegistrationForm.module.css';
 
@@ -61,7 +62,7 @@ const RegistrationForm = () => {
                         required
                     />
                 </div>
-                <button type="submit">Зареєструватися</button>
+                <button className={styles.buttonForm} type="submit">Зареєструватися</button>
             </form>
         </div>
     );

@@ -27,10 +27,13 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+.buttonForm {
+   background-color: rgb(13, 0, 255);
+}
 button {
     width: 100%;
     padding: 10px;
+   
     background-color: #4CAF50;
     border: none;
     color: white;
