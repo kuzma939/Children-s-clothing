@@ -1,0 +1,19 @@
+.productItem {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.productItem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.buttonItem {
+    background-color: blue;
+    color: white;
+}

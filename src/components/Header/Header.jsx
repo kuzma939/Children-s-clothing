@@ -1,15 +1,9 @@
 
-import { useState } from 'react';
-import CurrencySelector from '../CurrencySelector';
+import CurrencySelector from '../../CurrencySelector';
 import styles from './Header.module.css';
-import Cart from '../Cart/Cart';
 //import RegistrationForm from '../RegistrationForm/RegistrationForm';
-const Header = ({ cartItems, removeFromCart, toggleRegistrationForm }) => {
-    const [isCartOpen, setIsCartOpen] = useState(false);
+const Header = ({ cartItems, toggleRegistrationForm, toggleCart }) => {
 
-    const toggleCart = () => {
-        setIsCartOpen(!isCartOpen);
-    };
 
     return (
         <header className={styles.header}>
@@ -32,7 +26,8 @@ const Header = ({ cartItems, removeFromCart, toggleRegistrationForm }) => {
                 </ul>
                 <div className={styles.cart} onClick={toggleCart}>
                     <span>Кошик ({cartItems.length})</span>
-                    {isCartOpen && <Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
+                    <button onClick={toggleCart}>Відкрити кошик</button>
+                   
                 </div>
             </nav>
         </header>

@@ -1,0 +1,16 @@
+
+.productCategory {
+    margin-bottom: 40px;
+}
+
+.productCategory h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+

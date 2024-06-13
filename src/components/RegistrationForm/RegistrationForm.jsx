@@ -1,8 +1,9 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import styles from './RegistrationForm.module.css';
 
-const RegistrationForm = () => {
+const RegistrationForm = ({ closeForm }) => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -21,9 +22,10 @@ const RegistrationForm = () => {
     return (
         <div className={styles.registrationForm}>
             <h2>Реєстрація</h2>
+            <FontAwesomeIcon icon={faTimes} className={styles.closeIcon} onClick={closeForm} />
             <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
-                    <label htmlFor="username">Ім'я користувача</label>
+                    <label htmlFor="username">Імя користувача</label>
                     <input
                         type="text"
                         id="username"
