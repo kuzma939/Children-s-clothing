@@ -21,8 +21,9 @@ const RegistrationForm = ({ closeForm }) => {
 
     return (
         <div className={styles.registrationForm}>
-            <h2>Реєстрація</h2>
             <FontAwesomeIcon icon={faTimes} className={styles.closeIcon} onClick={closeForm} />
+            <h2>Реєстрація</h2>
+            
             <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
                     <label htmlFor="username">Імя користувача</label>

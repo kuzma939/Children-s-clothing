@@ -45,5 +45,7 @@ button:hover {
     background-color: #45a049;
 }
 .closeIcon {
-    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    
 }

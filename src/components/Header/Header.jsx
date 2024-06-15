@@ -1,6 +1,8 @@
 
 import CurrencySelector from '../../CurrencySelector';
 import styles from './Header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 //import RegistrationForm from '../RegistrationForm/RegistrationForm';
 const Header = ({ cartItems, toggleRegistrationForm, toggleCart }) => {
 
@@ -25,8 +27,9 @@ const Header = ({ cartItems, toggleRegistrationForm, toggleCart }) => {
                     <li><a href="#">Розпродаж</a></li>
                 </ul>
                 <div className={styles.cart} onClick={toggleCart}>
-                    <span>Кошик ({cartItems.length})</span>
-                    <button onClick={toggleCart}>Відкрити кошик</button>
+                    <span>
+                    <FontAwesomeIcon icon={faBasketShopping} className={styles.closeIcon} onClick={toggleCart} />Кошик ({cartItems.length})</span>
+                
                    
                 </div>
             </nav>

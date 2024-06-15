@@ -60,5 +60,5 @@
 .closeIcon {
     display: flex;
     cursor: pointer;
-
+justify-content: flex-end;
 }

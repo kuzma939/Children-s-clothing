@@ -1,6 +1,20 @@
-
+.productList {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
 .productCategory {
-    margin-bottom: 40px;
+    flex: 1 1 calc(25% - 40px); 
+    max-width: calc(25% - 40px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin: 10px;
+   /* margin: 20px 20px;*/
 }
 
 .productCategory h2 {
